@@ -1,0 +1,55 @@
+/* ==================================================================== */
+/*                      social-stats layout                             */
+/* ==================================================================== */
+
+/* social-stats typography */
+.social-text {
+    margin-left: 15px;
+}
+
+.social-text {
+
+    p:nth-child(1){
+        color: $bkgd-color-1;
+        font-weight: 500;
+        font-size: 1.15em;
+        margin-bottom: -5px;
+    }
+
+    p:nth-child(2){
+        font-size: $stats-font-size;
+        color: $font-color-2;
+    }
+    
+}
+
+.social {
+    padding-bottom: 15px;
+}
+
+.social-container {
+    border: 1px solid $border-color-3;
+    border-radius: 4px;
+    background-color:$bkgd-color-4;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    margin-top: 10px;
+    padding:  15px;
+}
+
+.social-image {
+    background-color: $bkgd-color-1;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-image svg {
+    fill: $svg-fill;
+    margin: auto;
+}
+

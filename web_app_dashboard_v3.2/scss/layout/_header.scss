@@ -1,0 +1,138 @@
+/* ==================================================================== */
+/*                         header                                       */
+/* ==================================================================== */
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    background-color: $bkgd-color-1;
+    padding: 15px 10px;
+}
+
+.heading {
+
+    h1 {
+        flex-grow: 3;
+    }
+
+    strong {
+        font-weight: 300;
+    }
+
+    h3 {
+        width: auto;
+        font-size: .87em;
+        font-weight: 400;
+        padding-left: 0;
+        color: $font-color-1;
+    }
+
+    svg {
+        height: 26px;
+        fill: $svg-fill;
+        opacity: 100%;
+        transition: opacity .4s ease-in;
+    }
+
+    svg:hover {
+        opacity: 50%;
+    }
+  
+    img {
+        height: 40px;
+    }
+
+}
+
+/* container for notification bell and dropdown menu */
+.notification-container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    padding-right: 13px;
+    border-right: 1px solid rgb(148, 148, 148); // line between bel and profile pic
+}
+
+/* green dot for notification */
+#notification {  
+   position: absolute;
+   top: 1px;
+   left: 20px;
+   width: 5px;
+   height: 5px;
+   background: lightgreen;
+   border-radius: 50%;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    background-color: $bkgd-color-4;;
+    position: absolute;
+    padding:6px;
+    top: 42px;
+    right: 1px;
+    border-radius: 4px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content{
+
+    :before {
+        position:absolute;
+        content: "";
+        background: $bkgd-color-4;;
+        width: 12px;
+        height: 12px;
+        border-radius: 0 0 0 4px;
+        transform: rotate(45deg);
+        top: -3px;
+        left: 160px;
+    }
+
+    h3 {
+        font-size: 1em;
+        padding-left: 8px;
+        font-weight: 600;
+        color: black;
+        padding-bottom: 5px;
+    }
+
+}
+.dropdown-activity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-activity {
+    
+    p {
+        font-size: .5em;
+        opacity: 60%;
+    }
+
+    a {
+        font-size: .7em;
+        color: black;
+        padding: 6px 8px;
+        padding-right: 0;
+        padding-bottom: 5px;
+        text-decoration: none;
+        display: block;
+        width: 145px;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,29 @@
+/* ==================================================================== */
+/*                             buttons                                  */
+/* ==================================================================== */
+
+/* message user */
+form button {
+    padding: 15px 0;
+    background-color: $bkgd-color-1;
+}
+
+/* settings */
+.settings-button {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.button-save, 
+.button-disabled {
+    flex-basis: 50%;
+    border-radius: 5px;
+    border: 1px solid $border-color-3;
+    background-color: $bkgd-color-1;
+    padding: 15px 0;
+}
+
+.button-disabled{
+    background-color: $cancel-button;
+}

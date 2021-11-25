@@ -1,0 +1,56 @@
+/* ==================================================================== */
+/*                      settings                            */
+/* ==================================================================== */
+
+.settings {
+    padding-bottom: 15px;
+}
+
+.settings{
+
+    label:nth-child(2) {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    label:nth-child(3) {
+        padding-bottom: 48px;
+    }
+    
+    label {
+        gap: 13px;
+    }
+
+} 
+
+.flex-pair strong{
+    font-size: $settings-font;
+    width: 160px
+}
+
+.on-off {
+    border: 2px solid $border-color-3;
+}
+ 
+/* select timezone  */
+.form-field {
+    color: $font-form;
+    display:block;
+    padding: 13px 15px;
+    border: 1px solid $border-color-3;
+    border-radius: 4px;
+    background-color: $bkgd-color-4;   
+}
+
+.svg-arrow {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 97% 17%;
+    background-image: url("../svgs/sort-down-solid.svg");
+    background-size: auto 65%;
+}
+
+.settings-button {
+    margin-top: 15px;
+    padding-top: 15px;
+}  

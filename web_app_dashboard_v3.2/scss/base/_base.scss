@@ -1,0 +1,56 @@
+/* ==================================================================== */
+/*                               base                                   */
+/* ==================================================================== */
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+h1{
+    font-size: 1.30em;
+    color: $font-color-1;
+}
+
+h2{
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: $font-container-title;
+    width: 95%;
+    margin: 0 auto;
+}
+
+svg {
+    height: 30px;
+}
+
+img {
+    border-radius: 50%;    
+}  
+
+option:disabled{
+    color: $font-form;
+}
+
+button {
+    color: $font-color-1;
+    font-size: 1.15em;
+}
+
+/* classes used throught out the project */
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.flex-pair {
+    display: flex;
+    align-items: center;
+}

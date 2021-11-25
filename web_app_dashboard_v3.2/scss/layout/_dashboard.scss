@@ -1,0 +1,64 @@
+/* ==================================================================== */
+/*                      dashboard                                       */
+/* ==================================================================== */
+
+.dashboard {
+    display: flex;
+    padding-left: 15px;
+}
+
+.dashboard h2 {
+    padding-right: 5%;
+}
+
+.main-header-search{
+    height: 100%;
+    width: 100%;
+    border: none;
+    
+}
+
+input[type="search"]{ 
+    border: 1px solid $border-color-3;
+    border-right: none;
+    background-color: $bkgd-color-3;
+    height: 100%;
+    align-items: normal;
+    width: 100%;
+} 
+
+/* most of this comes from https://www.w3schools.com/howto/howto_js_autocomplete.asp */
+.autocomplete {
+
+    position: relative;
+    display: inline-block;
+
+    &-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        /*position the autocomplete items to be the same width as the container:*/
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+}
+
+.autocomplete-items{
+
+    div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff; 
+        border-bottom: 1px solid #d4d4d4; 
+    }
+
+    /*when hovering an item:*/
+    div:hover {
+        background-color: #e9e9e9; 
+    }
+    
+}

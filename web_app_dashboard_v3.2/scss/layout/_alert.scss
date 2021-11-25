@@ -1,0 +1,24 @@
+/* ==================================================================== */
+/*                         alert                                        */
+/* ==================================================================== */
+
+#alert {
+    padding-top: 15px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.alert-banner {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 15px 15px;
+    background-color: $bkgd-color-1;
+}
+
+.alert-banner p {
+    color: $font-color-1;
+    font-size: .90em;
+}

@@ -1,0 +1,48 @@
+/* ==================================================================== */
+/*                             message user                             */
+/* ==================================================================== */
+/* message user form inputs label etc */
+.message {
+    padding-bottom: 15px;
+}
+form{
+
+    input[type="text"], 
+    textarea, 
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+        border: 1px solid $border-color-3;
+        border-radius: 4px;
+    }
+
+    button, textarea {
+        margin-bottom: 0;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    input[type="text"], 
+    textarea {
+        background-color: $bkgd-color-4;
+    }
+
+    input[type="text"]::placeholder,
+    textarea::placeholder{
+        padding-left: 10px;
+        color: $font-form;
+    }
+
+    input[type="text"] {
+    padding: 10px 0;
+    }
+
+    textarea{
+    padding-top: 10px;
+    overflow: auto;   
+    }
+
+}
+

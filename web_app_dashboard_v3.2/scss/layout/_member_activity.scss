@@ -1,0 +1,59 @@
+/* ==================================================================== */
+/*      layout for the new members and recent activity section          */
+/* ==================================================================== */
+
+/* new members & recent activity typography*/
+.members-container a,
+.members-container p,
+.recent-text {
+    text-align: center;
+    font-size: .85em;
+}  
+
+.members-container a {
+    display: block;
+    color: $bkgd-color-1;
+    text-decoration-line: none;
+}
+
+.recent-text strong {
+    font-weight: 600;
+}
+
+.recent h3,
+.members h3 {
+    padding-bottom: 5px;
+}
+
+/* images */
+.profile-image {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+    // padding-bottom: 5px;;
+}
+
+/* new members layout*/
+.members-container:nth-child(-n+4){
+    border-bottom: 1px solid $border-color-3;
+   
+}
+
+.members-container{
+    padding: 20px 0;
+}
+
+/* recent layout */ 
+.recent svg {
+    display: none;
+}
+
+.recent-container:nth-child(-n+4){
+    border-bottom: 1px solid $border-color-3;
+   
+}
+
+.recent-container{
+    padding: 20px 0;
+}

@@ -1,0 +1,41 @@
+/* ==================================================================== */
+/*              layout for sections with a chart                        */
+/* ==================================================================== */
+
+.traffic {
+    padding-top: 15px;
+}
+
+.traffic {
+
+    h3{
+        width: 100%;
+        margin:0;
+        padding-bottom: 5px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        padding: 8px;
+        border-radius: 1.75em;
+    }
+    
+}
+
+.selected {
+    background-color: #78CF82; 
+    color: white;
+}
+
+.widget {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+.mobile .widget {
+   padding-bottom: 40px;
+}
+
