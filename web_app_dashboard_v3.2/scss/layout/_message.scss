@@ -5,23 +5,23 @@
 .message {
     padding-bottom: 15px;
 }
+form {
+    position: relative;
+    vertical-align: top;
+}
+
 form{
 
     input[type="text"], 
     textarea, 
     button {
         width: 100%;
-        margin-bottom: 15px;
         border: 1px solid $border-color-3;
         border-radius: 4px;
     }
 
     button, textarea {
-        margin-bottom: 0;
-    }
-
-    button {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     input[type="text"], 
@@ -36,12 +36,15 @@ form{
     }
 
     input[type="text"] {
-    padding: 10px 0;
+      padding: 10px 5px;
     }
 
     textarea{
-    padding-top: 10px;
-    overflow: auto;   
+        vertical-align: top;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        overflow: auto;   
     }
 
 }

@@ -101,4 +101,6 @@ function autocomplete(inp, arr) {
         closeAllLists(e.target);
     });
   }
-    autocomplete(document.getElementById('searchInput'), names);
+   
+autocomplete(document.getElementById('searchInput'), names);
+autocomplete(document.getElementById('userField'), names);

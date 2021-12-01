@@ -54,3 +54,21 @@ button {
     display: flex;
     align-items: center;
 }
+
+/****** base layout ********/
+
+/* width size for chart containers */
+.widget-container-full, 
+.widget-container-half {
+    width: 95vw;
+}
+
+/* sections layout */
+section {
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+section h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

@@ -60,6 +60,23 @@ button {
   align-items: center;
 }
 
+/****** base layout ********/
+/* width size for chart containers */
+.widget-container-full,
+.widget-container-half {
+  width: 95vw;
+}
+
+/* sections layout */
+section {
+  border-bottom: 1px solid lightgray;
+}
+
+section h3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /* ==================================================================== */
 /*                             grid                                     */
 /* ==================================================================== */
@@ -87,8 +104,11 @@ main {
 /*                             buttons                                  */
 /* ==================================================================== */
 /* message user */
-form button {
+button {
   padding: 15px 0;
+}
+
+form button {
   background-color: #827bd3;
 }
 
@@ -105,7 +125,6 @@ form button {
   border-radius: 5px;
   border: 1px solid lightgray;
   background-color: #827bd3;
-  padding: 15px 0;
 }
 
 .button-disabled {
@@ -193,7 +212,7 @@ form button {
   border-radius: 0 0 0 4px;
   transform: rotate(45deg);
   top: -3px;
-  left: 160px;
+  left: 170px;
 }
 .dropdown-content h3 {
   font-size: 1em;
@@ -210,11 +229,11 @@ form button {
 }
 
 .dropdown-activity p {
-  font-size: 0.5em;
+  font-size: 0.6em;
   opacity: 60%;
 }
 .dropdown-activity a {
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: black;
   padding: 6px 8px;
   padding-right: 0;
@@ -296,7 +315,7 @@ input[type=search] {
   border-top: none;
   z-index: 99;
   /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
+  top: 50px;
   left: 0;
   right: 0;
 }
@@ -487,19 +506,20 @@ input[type=search] {
   padding-bottom: 15px;
 }
 
+form {
+  position: relative;
+  vertical-align: top;
+}
+
 form input[type=text],
 form textarea,
 form button {
   width: 100%;
-  margin-bottom: 15px;
   border: 1px solid lightgray;
   border-radius: 4px;
 }
 form button, form textarea {
-  margin-bottom: 0;
-}
-form button {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 form input[type=text],
 form textarea {
@@ -511,10 +531,13 @@ form textarea::placeholder {
   color: #b9b9b9;
 }
 form input[type=text] {
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 form textarea {
+  vertical-align: top;
   padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   overflow: auto;
 }
 
@@ -525,15 +548,15 @@ form textarea {
   padding-bottom: 15px;
 }
 
-.settings label:nth-child(2) {
-  padding-top: 5px;
-  padding-bottom: 30px;
-}
 .settings label:nth-child(3) {
-  padding-bottom: 48px;
+  margin-top: 20px;
+}
+.settings select {
+  margin-top: 53px;
 }
 .settings label {
   gap: 13px;
+  height: 44px;
 }
 
 .flex-pair strong {
@@ -549,7 +572,7 @@ form textarea {
 .form-field {
   color: #b9b9b9;
   display: block;
-  padding: 13px 15px;
+  padding: 10px 15px;
   border: 1px solid lightgray;
   border-radius: 4px;
   background-color: #f7f7f7;
@@ -565,26 +588,11 @@ form textarea {
 
 .settings-button {
   margin-top: 15px;
-  padding-top: 15px;
 }
 
-/* width size for chart containers */
-.widget-container-full,
-.widget-container-half {
-  width: 95vw;
-}
-
-/* sections layout */
-section {
-  border-bottom: 1px solid lightgray;
-}
-
-section h3 {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-/************ media quaries ************/
+/* ==================================================================== */
+/*                          media quaries                               */
+/* ==================================================================== */
 /* medium media quary */
 @media (min-width: 768px) {
   /********* grid layout *********/

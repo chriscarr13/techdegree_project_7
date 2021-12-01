@@ -8,17 +8,16 @@
 
 .settings{
 
-    label:nth-child(2) {
-        padding-top: 5px;
-        padding-bottom: 30px;
-    }
-
     label:nth-child(3) {
-        padding-bottom: 48px;
+        margin-top: 20px;
     }
     
+    select {
+        margin-top: 53px;
+    }
     label {
         gap: 13px;
+        height: 44px;
     }
 
 } 
@@ -30,13 +29,14 @@
 
 .on-off {
     border: 2px solid $border-color-3;
+
 }
  
 /* select timezone  */
 .form-field {
     color: $font-form;
     display:block;
-    padding: 13px 15px;
+    padding: 10px 15px;
     border: 1px solid $border-color-3;
     border-radius: 4px;
     background-color: $bkgd-color-4;   
@@ -52,5 +52,4 @@
 
 .settings-button {
     margin-top: 15px;
-    padding-top: 15px;
 }  

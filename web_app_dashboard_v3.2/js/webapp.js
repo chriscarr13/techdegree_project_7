@@ -43,7 +43,7 @@ alertBanner.addEventListener('click', e => {
 });
 
 /*********  drop down menu **********/
-iconMenu.addEventListener('click', e => {
+iconMenu.addEventListener('click', () => {
     notification.style.display = "none";
     if(dropMenu.classList.contains("hide")){
         dropMenu.classList.remove("hide");
@@ -98,7 +98,10 @@ trafficNav.addEventListener('click', e => {
 });
 
 /************** form field messages stuff *********/
-send.addEventListener('click', () => {
+send.addEventListener('click', e => {
+    
+    const event = e;
+    event.preventDefault();
     if (user.value === "" && message.value === ""){
         alert("Please fill out user and message fields before sending");
     } 
@@ -115,6 +118,7 @@ send.addEventListener('click', () => {
 
 /*********** local storage settings *****************/
 myStorage = window.localStorage;
+
 function save() {
     if(emailSettings.checked === true){
         myStorage.setItem('email-notification', emailSettings.checked);
@@ -131,6 +135,7 @@ function save() {
     }
     myStorage.setItem('timezone', timezone.value);
 }
+
 function cancel() {
     myStorage.clear();
     emailSettings.checked = false;  

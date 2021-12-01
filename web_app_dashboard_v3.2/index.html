@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body class="grid-container">
-    <header class="heading">
+    <header class="heading" id="home">
         <h1>Web<strong>App</strong>™</h1>
         <div class="notification-container"> <!-- contains the bell icon -->
                 <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.033 122.88">
@@ -35,22 +35,22 @@
                     </div>
                 </div>
         </div>
-        <img src="../images/member-1.jpg" alt="image of member number 1">
+        <img src="images/member-1.jpg" alt="image of member number 1">
         <h3>Student Name</h3>
     </header>
     <nav> <!-- for side navigation bar-->
         <ul>
-            <li><a>
-                <img src="../svgs/home.svg" alt="house icon">
+            <li><a href="#home">
+                <img src="svgs/home.svg" alt="house icon">
             </a></li>
-            <li><a>
-                <img src="../svgs/bar-chart.svg" alt="chart icon">
+            <li><a href="#start-of-charts">
+                <img src="svgs/bar-chart.svg" alt="chart icon">
             </a></li>
-            <li><a>
-                <img src="../svgs/members.svg" alt="member icon">
+            <li><a href="#members">
+                <img src="svgs/members.svg" alt="member icon">
             </a></li>
-            <li><a>
-                <img src="../svgs/settings.svg" alt="settings icon">
+            <li><a href="#settings">
+                <img src="svgs/settings.svg" alt="settings icon">
             </a></li>
         </ul>
     </nav> 
@@ -64,7 +64,7 @@
         <div class="alert" id="alert"> <!-- alert message -->
         </div>
         <!-- beginning of charts -->
-        <section class="traffic">
+        <section class="traffic" id="start-of-charts">
             <div class="traffic-header container">
                 <h3>TRAFFIC</h3>
                 <ul id="traffic-list" class="traffic-nav">
@@ -130,10 +130,10 @@
                 </div>
             </div>
         </section>
-        <section class="members">
+        <section class="members" id="members">
             <h3>NEW MEMBERS</h3>
             <div class="members-container container">
-                <img src="../images/member-1.jpg" class="profile-image" alt="image of victoria chambers">
+                <img src="images/member-1.jpg" class="profile-image" alt="image of victoria chambers">
                 <div class="members-text">
                     <p>Victoria Chambers</p>
                     <a href="#">victoria.chambers80@example.com</a>
@@ -141,7 +141,7 @@
                 <p>10/15/20</p>
             </div>
             <div class="members-container container">
-                <img src="../images/member-2.jpg" class="profile-image" alt="image of dale byrd">
+                <img src="images/member-2.jpg" class="profile-image" alt="image of dale byrd">
                 <div class="members-text">
                     <p>Dale Byrd</p>
                     <a href="#">dale.byrd52@example.com</a>
@@ -149,7 +149,7 @@
                 <p>10/15/20</p>
             </div>
             <div class="members-container container">
-                <img src="../images/member-3.jpg" class="profile-image" alt="image of dawn wood">
+                <img src="images/member-3.jpg" class="profile-image" alt="image of dawn wood">
                 <div class="members-text">
                     <p>Dawn Wood</p>
                     <a href="#">dawn.wood16@example.com</a>
@@ -157,7 +157,7 @@
                 <p>10/15/20</p>
             </div>
             <div class="members-container container">
-                <img src="../images/member-4.jpg" class="profile-image" alt="image of dan oliver">
+                <img src="images/member-4.jpg" class="profile-image" alt="image of dan oliver">
                 <div class="members-text">
                     <p>Dan Oliver</p>
                     <a href="#">dan.oliver82@example.com</a>
@@ -168,7 +168,7 @@
         <section class="recent activity">
             <h3>RECENT ACTIVITY</h3>
             <div class="recent-container container">
-                <img src="../images/member-1.jpg" class="profile-image" alt="image of victoria chambers">
+                <img src="images/member-1.jpg" class="profile-image" alt="image of victoria chambers">
                 <div class="recent-text">
                     <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
                     <P>4 hours ago</P>
@@ -180,7 +180,7 @@
                 </a>
             </div>
             <div class="recent-container container">
-                <img src="../images/member-2.jpg" class="profile-image" alt="image of dale byrd">
+                <img src="images/member-2.jpg" class="profile-image" alt="image of dale byrd">
                 <div class="recent-text">
                     <p>Dale Byrd liked the post <strong>Facebook's changes for 2021</strong></p>
                     <p>5 hours ago</p>
@@ -192,7 +192,7 @@
                 </a>
             </div>
             <div class="recent-container container">
-                <img src="../images/member-3.jpg" class="profile-image" alt="image of dawn wood">
+                <img src="images/member-3.jpg" class="profile-image" alt="image of dawn wood">
                 <div class="recent-text">
                     <p>Dawn Wood commented on <strong>Facebook's changes for 2021</strong></p>
                     <p>5 hours ago</p>
@@ -204,7 +204,7 @@
                 </a>
             </div>
             <div class="recent-container container">
-                <img src="../images/member-4.jpg" class="profile-image" alt="image of dan oliver">
+                <img src="images/member-4.jpg" class="profile-image" alt="image of dan oliver">
                 <div class="recent-text">
                     <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
                     <p>1 day ago</p>
@@ -218,13 +218,13 @@
         </section>
         <section class="message">
             <h3>MESSAGE USER</h3>
-            <form class="widget-container container">
+            <form class="widget-container container" autocomplete="off">
                 <input type="text" placeholder="Search for user" class="form-field" id="userField">
                 <textarea placeholder="Message for User" class="form-area" id="messageField" rows="6"></textarea>
                 <button class="button-primary" id="send">Send</button>
             </form>
         </section>
-        <section class="settings">
+        <section class="settings" id="settings">
             <h3>SETTINGS</h3>
             <label  class="switch-light switch-ios  flex-pair container"  onclick>
                 <input id="email-notification"  type="checkbox">

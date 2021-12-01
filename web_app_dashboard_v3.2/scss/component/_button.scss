@@ -3,8 +3,11 @@
 /* ==================================================================== */
 
 /* message user */
-form button {
+button {
     padding: 15px 0;
+}
+
+form button {
     background-color: $bkgd-color-1;
 }
 
@@ -21,7 +24,6 @@ form button {
     border-radius: 5px;
     border: 1px solid $border-color-3;
     background-color: $bkgd-color-1;
-    padding: 15px 0;
 }
 
 .button-disabled{
